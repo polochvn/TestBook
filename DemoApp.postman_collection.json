@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "ee45b7a4-2d83-4d4c-ba80-d9caa22a8d0c",
+		"name": "DemoApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26520564"
+	},
+	"item": [
+		{
+			"name": "CreateAuthor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"John\",\r\n    \"lastName\": \"Wikkens\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/author",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"author"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteAuthor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/author/52",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"author",
+						"52"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAuthorById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/author/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"author",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateAuthor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 2,\r\n  \"firstName\": \"Grigoriy\",\r\n  \"lastName\": \"Fedorov\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/author",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"author"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"New Book\",\r\n  \"pageCount\": 123\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/author/1/book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"author",
+						"1",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBookById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/author/1/book/202",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"author",
+						"1",
+						"book",
+						"202"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBook",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 202,\r\n  \"title\": \"Book Title\",\r\n  \"pageCount\": 1253\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/author/1/book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"author",
+						"1",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBook",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/author/1/book/202",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"author",
+						"1",
+						"book",
+						"202"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
